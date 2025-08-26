@@ -1,0 +1,12 @@
+{
+  "tos": {
+    "version": "1.0",
+    "effective_date": "2025-09-01",
+    "path": "tos_1.0.md"
+  },
+  "privacy": {
+    "version": "1.0",
+    "effective_date": "2025-09-01",
+    "path": "privacy_1.0.md"
+  }
+}
