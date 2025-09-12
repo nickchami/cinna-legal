@@ -12,10 +12,10 @@ Last updated: Friday August 22nd, 2025
 Welcome to **Cinna!** These Terms of Service (“Terms”) govern your use of the Cinna platform, website, and mobile application (collectively, the “Service”). By accessing or using Cinna, you agree to these Terms. If you do not agree, please do not use the Service.
 
 
-##1. About Cinna
+## 1. About Cinna
 Cinna is a platform that connects riders with drivers and bus operators for intercity transportation. Cinna is not a transportation company and does not own, operate, or control vehicles. Instead, we facilitate cost-sharing carpools and bus bookings between independent users.
 
-##2. Changes to the Terms
+## 2. Changes to the Terms
 Cinna may modify the Service or these Terms at any time. Updates will be posted, with the effective date noted. Continued use of the Service after changes constitutes acceptance of the updated Terms.
 
 ##3. Eligibility & Accounts
