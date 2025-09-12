@@ -1,8 +1,8 @@
 {
   "tos": {
-    "version": "1.0.2",
+    "version": "1.0.3",
     "effective_date": "2025-09-01",
-    "path": "tos_1.0.2.md"
+    "path": "tos_1.0.3.md"
   },
   "privacy": {
     "version": "1.0",
