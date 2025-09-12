@@ -1,4 +1,4 @@
-# Terms of Service (Cinna) — v1.0
+#Terms of Service (Cinna) — v1.0
 
 **Effective Date:** 2025-09-01
 
@@ -12,13 +12,13 @@ Last updated: Friday August 22nd, 2025
 Welcome to **Cinna!** These Terms of Service (“Terms”) govern your use of the Cinna platform, website, and mobile application (collectively, the “Service”). By accessing or using Cinna, you agree to these Terms. If you do not agree, please do not use the Service.
 
 
-## 1. About Cinna
+##1. About Cinna
 Cinna is a platform that connects riders with drivers and bus operators for intercity transportation. Cinna is not a transportation company and does not own, operate, or control vehicles. Instead, we facilitate cost-sharing carpools and bus bookings between independent users.
 
-## 2. Changes to the Terms
+##2. Changes to the Terms
 Cinna may modify the Service or these Terms at any time. Updates will be posted, with the effective date noted. Continued use of the Service after changes constitutes acceptance of the updated Terms.
 
-## 3. Eligibility & Accounts
+##3. Eligibility & Accounts
 You must be at least in the year you are turning 18 to create an account.
 You agree to provide accurate and up-to-date information
 You are responsible for maintaining the confidentiality of your account credentials.
@@ -36,11 +36,11 @@ False declarations or expired documentation may result in account suspension.
 
 
 
-## 4. Nature of the Service
+##4. Nature of the Service
 Carpools: Cinna enables private drivers to share vehicle costs with riders. Drivers are not licensed professional carriers and may not profit beyond cost-sharing.
 Bus Services: Cinna partners with third-party bus operators. These operators are solely responsible for the transportation services provided.
 
-## 5. Your Responsibilities
+##5. Your Responsibilities
 You must register for an Account via school email and keep all information accurate and current.
 
 
@@ -48,7 +48,7 @@ You're solely responsible for your interactions with other Members; exercise com
 
 
 Disputes between users must be resolved independently. Except as required by law, Cinna is not liable for such interactions.
-## 6. Conduct Guidelines
+##6. Conduct Guidelines
 Members must:
 Comply with applicable laws and regulations, including safe & sober driving.
 
@@ -63,7 +63,7 @@ Not use the Service for commercial activity; all trips must be cost-sharing (no 
 
 
 Avoid speculative trips, only post actual, planned trips. Violation may result in account suspension or termination.
-## 7. Using the Service
+##7. Using the Service
 All trips must be pre-agreed via the Service. Additional unofficial stops or services are prohibited.
 
 
@@ -71,7 +71,7 @@ The Driver who posts the Trip must be the one actually driving.
 
 
 All payments must be processed via Cinna’s platform. No cash transactions.
-## 8. Cancellation, No-Shows & Refunds
+##8. Cancellation, No-Shows & Refunds
 Rider Cancellation (Carpool)
 Riders cancelling ≥72h before departure: full refund.
 
@@ -116,19 +116,19 @@ Passenger No-Show: if rider fails to board within a 15-minute pickup window, no 
 Driver No-Show: full refund to passengers + no-show review on driver’s account.
 
 
-## 9. Payout Policies
+##9. Payout Policies
 
 Bus Vendors: Paid out every second Friday, for tickets that have cleared the 24-hour refund window.
 Carpool Drivers: Paid out weekly (Fridays), for trips that have cleared the 48-hour post-trip buffer.
 Cinna holds payments until refund windows expire to prevent sending refunded money to drivers/vendors.
 
-## 10. Carpool Price Cap Policy
+##10. Carpool Price Cap Policy
 
 One-average model: flat 18¢/km price cap across all vehicles.
 The driver is then able to adjust accordingly if needed.
 
 
-## 11. Ratings and Reviews
+##11. Ratings and Reviews
 
 Drivers must maintain an average rating ≥4.5/5.
 
@@ -144,7 +144,7 @@ Safety-related incidents trigger immediate review.
 
 Fraudulent/manipulated ratings will be removed.
 
-## 12. Anti-Discrimanation and Harassment 
+##12. Anti-Discrimanation and Harassment 
 
 Anti-Discrimination: No discrimination based on race, gender, religion, orientation, age, or disability.
 
@@ -160,7 +160,7 @@ Reporting: Members are encouraged to report violations promptly.
 
 
 
-## 13. Identity verification 
+##13. Identity verification 
 Cinna may require ID verification (photo ID, selfie, etc.) before posting trips.
 
 
@@ -169,11 +169,11 @@ Refusal or failed verification may block access.
 
 Cinna does not guarantee Member conduct or background checks.
 
-## 14. Privacy Policy 
+##14. Privacy Policy 
 Cinna complies with PIPEDA. We collect, use, and share data as outlined in our Privacy Policy.
 
 
-## 15. Liability & Disclaimers
+##15. Liability & Disclaimers
 Cinna is not responsible for accidents, delays, cancellations, or losses.
 
 
