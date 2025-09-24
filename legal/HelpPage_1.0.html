@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cinna Help</title>
+    <style>
+      :root {
+        --collection: #1e90ff;  /* blue */
+        --subcategory: #2ecc71; /* green */
+        --article: #e74c3c;     /* red */
+        --added: #f1c40f;       /* yellow */
+        --text: #111;
+        --muted: #666;
+        --bg: #ffffff00; /* transparent to blend in app */
+        --card: #ffffff;
+        --border: #e5e7eb;
+      }
+      html, body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--text); background: var(--bg); }
+      .container { max-width: 900px; margin: 0 auto; padding: 16px; }
+      h1 { font-size: 28px; margin: 8px 0 16px; }
+      p.meta { color: var(--muted); font-size: 12px; margin: 0 0 24px; }
+
+      .legend { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; font-size: 12px; color: var(--muted); }
+      .chip { display: inline-flex; align-items: center; gap: 6px; padding: 4px 8px; border-radius: 999px; border: 1px solid var(--border); background: var(--card); }
+      .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+      .section { border: 1px solid var(--border); border-radius: 12px; background: var(--card); margin-bottom: 16px; overflow: hidden; }
+      .section > .header { padding: 14px 16px; border-bottom: 1px solid var(--border); font-weight: 600; color: var(--collection); font-size: 16px; }
+      .group { padding: 8px 0; }
+      .subcategory { color: var(--subcategory); font-weight: 600; padding: 10px 16px 4px; }
+      .article { padding: 8px 16px; }
+      .article h4 { color: var(--article); margin: 0 0 4px; font-size: 15px; }
+      .article p { margin: 0 0 8px; line-height: 1.45; }
+      .added { background: #fff8db; border-radius: 8px; padding: 8px; display: inline-block; }
+      ul, ol { margin: 6px 0 8px 20px; }
+      li { margin: 4px 0; }
+      .spacer { height: 8px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cinna Help Center</h1>
+      <p class="meta">Development draft. Some articles are placeholders.</p>
+
+      <div class="legend">
+        <span class="chip"><span class="dot" style="background: var(--collection)"></span> Collections</span>
+        <span class="chip"><span class="dot" style="background: var(--subcategory)"></span> Sub collections</span>
+        <span class="chip"><span class="dot" style="background: var(--article)"></span> Articles</span>
+        <span class="chip"><span class="dot" style="background: var(--added)"></span> Added myself</span>
+      </div>
+
+      <!-- Help for drivers -->
+      <section class="section">
+        <div class="header">Help for drivers</div>
+
+        <div class="group">
+          <div class="subcategory">Posting a trip</div>
+          <div class="article">
+            <h4>How to post a trip</h4>
+            <p>Drivers can directly post a trip on our Cinna app on the Post tab. Posting a trip includes filling out your origin, destination, date and time, and vehicle.</p>
+          </div>
+          <div class="article">
+            <h4>How to set a price for your trip</h4>
+            <p>Cinna automatically calculates trip fares based on distance and average fuel cost. Drivers do not manually set fares, ensuring fairness and compliance with carpooling regulations (drivers save on costs, not profit). Drivers can lower their prices accordingly.</p>
+          </div>
+          <div class="article">
+            <h4>How to add a vehicle to your account</h4>
+            <p>Go to Account → Vehicles, then add your vehicle. You can also add your vehicle during the post a trip process.</p>
+            <div class="added">
+              <strong>You will need:</strong>
+              <ul>
+                <li>Car make, model, and year</li>
+                <li>Plate number</li>
+                <li>Seating capacity</li>
+                <li>Optional: vehicle photo</li>
+              </ul>
+            </div>
+          </div>
+          <div class="article"><h4>How to add stops to your trip</h4></div>
+          <div class="article"><h4>How to set up pick-ups for your passengers</h4></div>
+          <div class="article">
+            <h4>Making changes to a posted trip</h4>
+            <p><strong>Editing a posted trip:</strong> Drivers can edit details (departure time, stops, vehicle) until the first booking is confirmed. After that, only minor updates (e.g., pick-up location clarifications) are allowed.</p>
+            <p><strong>Closing a trip to prevent more booking requests:</strong> Drivers can close a trip once they’ve reached their preferred passenger count or if plans change. Closed trips remain visible to existing passengers but no new bookings can be made.</p>
+            <p><strong>Changing the price for your trip</strong></p>
+          </div>
+        </div>
+
+        <div class="group">
+          <div class="subcategory">How passenger bookings work</div>
+          <div class="article"><h4>Booking options for passengers</h4></div>
+          <div class="article"><h4>What does instant book mean</h4></div>
+          <div class="article"><h4>How to respond to a booking request</h4></div>
+        </div>
+
+        <div class="group">
+          <div class="subcategory">During your trip</div>
+          <div class="article"><h4>Getting ready for your trip: A checklist for drivers</h4></div>
+          <div class="article"><h4>Picking up your passengers during your trip</h4></div>
+          <div class="article"><h4>How to provide a comfortable journey</h4></div>
+          <div class="article"><h4>Driving standards during your trip</h4></div>
+        </div>
+
+        <div class="group">
+          <div class="subcategory">Canceling a trip</div>
+          <div class="article">
+            <h4>How to cancel a trip as a driver</h4>
+            <p>You can remove your trip from your profile and your trip will be canceled.</p>
+          </div>
+          <div class="article">
+            <h4>How to cancel a passenger’s booking on your trip</h4>
+          </div>
+          <div class="article">
+            <h4>Driver cancellation policy</h4>
+            <p>If a driver cancels a ride within 10 hours of its scheduled departure, they receive one strike. Cancellations made 10 hours or more before departure incur no penalty. Accumulating three strikes in a rolling year results in account suspension pending review.</p>
+          </div>
+          <div class="article">
+            <h4>Driver no show policy</h4>
+            <p>Passengers get a full refund, and we provide the next best possible way to get to their destination.</p>
+          </div>
+        </div>
+
+        <div class="group">
+          <div class="subcategory">Getting paid</div>
+          <div class="article">
+            <h4>How driver payouts work</h4>
+            <p>Cinna processes payouts to drivers on a weekly schedule (every Friday). Payments include all completed trips that have cleared the 48-hour refund hold period.</p>
+            <div class="spacer"></div>
+            <div class="added">
+              <p><strong>Example:</strong><br>Trip completed: July 15, 2025 at 10:00 AM<br>Refund hold (48 hours): Trip becomes eligible on July 17, 2025 at 10:00 AM<br>Next Friday payout: July 18, 2025</p>
+            </div>
+            <p><strong>What is the refund hold?</strong> To protect both drivers and passengers, Cinna enforces a 48-hour refund hold after a trip is marked complete. This allows time for cancellations, refund requests, or disputes to be resolved before funds are released.</p>
+            <p><strong>When will I receive my payout?</strong> Payouts are processed every Friday. Trips clearing the 48-hour hold before Thursday 11:59 PM are included that Friday; otherwise, the following Friday.</p>
+            <p><strong>How do payouts work?</strong> Payouts are sent through Stripe Connect to your linked bank account or debit card. Standard payouts take 2–5 business days depending on your bank. Instant payout (if enabled by Stripe in your region) may be available for an additional fee.</p>
+            <div class="added">
+              <p><strong>First Payout Example:</strong> If your first completed trip was on July 15, 2025, the eligible date is July 17, 2025. The first possible payout would then occur on Friday, July 18, 2025.</p>
+            </div>
+            <p><strong>What to do if you haven't received a payout yet:</strong> Check if the trip was marked as complete. Verify your bank account details in Stripe. Ensure no pending disputes/refunds are holding funds. If all else checks, please email us.</p>
+            <p><strong>How to set up your payout method:</strong> Connect your bank account or debit card in the Payouts section of the app (powered by Stripe). Verification may take 1–2 business days.</p>
+            <p><strong>What is the GST/HST on payouts?</strong> Since Cinna is a non-commercial carpooling service, we do not issue GST/HST numbers to drivers.</p>
+            <div class="article"><h4>How long do I have to claim a payout?</h4></div>
+            <div class="article"><h4>Problems with payouts to your bank account</h4></div>
+            <div class="article"><h4>Bank account verifications with Stripe</h4></div>
+            <div class="article"><h4>Problems with payouts to your PayPal account</h4></div>
+          </div>
+        </div>
+
+        <div class="group">
+          <div class="subcategory">Driver FAQs</div>
+          <div class="article"><h4>Can I post my trip on other carpooling platforms?</h4></div>
+          <div class="article">
+            <h4>Can I use Cinna with a rental vehicle?</h4>
+            <p>Yes, provided the rental company permits ridesharing/carpooling. You may need to show proof of rental agreement.</p>
+          </div>
+          <div class="article"><h4>How do I charge for ferries and tolls?</h4></div>
+          <div class="article"><h4>What is the tolerance for driving above the speed limit?</h4></div>
+          <div class="article">
+            <h4>Can I share the driving with my passengers</h4>
+            <p>Not officially supported; the driver on the booking is responsible for the trip.</p>
+          </div>
+          <div class="article"><h4>Can I drive with a learner’s permit</h4></div>
+          <div class="article"><h4>How do I mark my trip as complete</h4></div>
+          <div class="article"><h4>Why doesn't my trip show up in search results</h4></div>
+          <div class="article"><h4>Why can't I post more trips or invite more people in a day</h4></div>
+          <div class="article"><h4>My passengers didn't show up</h4></div>
+        </div>
+      </section>
+
+      <!-- Help for passengers -->
+      <section class="section">
+        <div class="header">Help for passengers</div>
+
+        <div class="group">
+          <div class="subcategory">Booking a trip</div>
+          <div class="article">
+            <h4>How to book on a posted trip as a passenger</h4>
+            <p>Passengers can enter their pickup and destination on the Search page to see available drivers and choose appropriately.</p>
+          </div>
+          <div class="article"><h4>How to post a trip request</h4></div>
+          <div class="article"><h4>How to pay for your trip</h4></div>
+          <div class="article">
+            <h4>Why we have a no-cash policy</h4>
+            <p>For safety and fairness, all payments must go through Cinna. This protects both passengers and drivers, ensures refunds, and keeps records for dispute resolution.</p>
+          </div>
+        </div>
+
+        <div class="group">
+          <div class="subcategory">During your trip</div>
+          <div class="article"><h4>Getting ready for your trip: A checklist for passengers</h4></div>
+          <div class="article"><h4>How to refer a friend</h4></div>
+        </div>
+
+        <div class="group">
+          <div class="subcategory">Cancelling your booking</div>
+          <div class="article">
+            <h4>How to cancel your booking as a passenger</h4>
+          </div>
+          <div class="article">
+            <h4>Passenger cancellation policy</h4>
+            <p>Riders cancelling their ride 72h or more before departure get a full refund. Between 72h and 24h, the refundable share decays exponentially. No refunds are issued once the request is 24h or fewer before departure.</p>
+          </div>
+          <div class="article">
+            <h4>Passenger No-show policy</h4>
+            <p>If a passenger does not show during the pickup window (15 minutes), the passenger will get charged and the driver can continue with their trip.</p>
+          </div>
+          <div class="article">
+            <h4>How to get a refund if a driver cancels</h4>
+            <p>We only charge at the end of your trip, so your refund will be automatically granted.</p>
+          </div>
+          <div class="article"><h4>Refunds</h4></div>
+          <div class="article"><h4>How to request a refund on your booking as a passenger</h4></div>
+          <div class="article"><h4>What to do if you haven't received your refund</h4></div>
+          <div class="article"><h4>What to do if your driver doesn't show up</h4></div>
+        </div>
+
+        <div class="group">
+          <div class="subcategory">Passenger FAQs</div>
+          <div class="article"><h4>Can I book for someone else?</h4></div>
+          <div class="article"><h4>Can I pay cash?</h4></div>
+          <div class="article"><h4>Can I travel with a pet?</h4></div>
+          <div class="article">
+            <h4>Can I pay without a credit card?</h4>
+            <p>Currently, we only support debit/credit via Stripe. Support for alternative payment methods is being explored.</p>
+          </div>
+          <div class="article"><h4>How do I turn off notifications for new trips?</h4></div>
+          <div class="article"><h4>Can I travel if I'm feeling unwell?</h4></div>
+          <div class="article">
+            <h4>Can children travel on Cinna?</h4>
+            <p>Children can travel only if accompanied by an adult. Child seats are the responsibility of the passenger.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Help with my account -->
+      <section class="section">
+        <div class="header">Help with my account</div>
+        <div class="group">
+          <div class="subcategory">Account problems</div>
+          <div class="article"><h4>Why has my account been suspended</h4></div>
+          <div class="article"><h4>I can't access my account</h4></div>
+          <div class="article"><h4>How to close your account</h4></div>
+          <div class="article"><h4>How to reopen your account</h4></div>
+          <div class="article"><h4>Why do I have two accounts</h4></div>
+          <div class="article"><h4>I can't access my account “This field is required” error</h4></div>
+        </div>
+
+        <div class="group">
+          <div class="subcategory">Setting up your profile</div>
+          <div class="article">
+            <h4>How to set up your profile</h4>
+            <p>Tap “Get started”, then enter your name, school, age, gender, and add a profile picture. Your Cinna account will be created.</p>
+          </div>
+          <div class="article">
+            <h4>Profile picture guidelines</h4>
+            <p>Use a clear, front-facing photo of yourself. Avoid group photos, pets, or logos.</p>
+          </div>
+        </div>
+
+        <div class="group">
+          <div class="subcategory">Adding or responding to a review</div>
+          <div class="article"><h4>How to leave a review after your trip</h4></div>
+          <div class="article"><h4>Leaving a review for your driver</h4></div>
+          <div class="article"><h4>Leaving a review for your passengers</h4></div>
+          <div class="article"><h4>Responding to a review</h4></div>
+          <div class="article"><h4>Can I get a review removed from my profile?</h4></div>
+          <div class="article"><h4>What is a cancellation review?</h4></div>
+          <div class="article"><h4>What is a no-show review?</h4></div>
+          <div class="article"><h4>Why can't I leave a review after a trip?</h4></div>
+        </div>
+
+        <div class="group">
+          <div class="subcategory">Verifications</div>
+          <div class="article">
+            <h4>How to get your driver’s licence verification</h4>
+            <p>Drivers must upload a valid driver’s license photo for verification. This helps keep trips safe and builds passenger trust.</p>
+          </div>
+          <div class="article">
+            <h4>Account verifications (email, SMS, etc)</h4>
+            <p>You will need to verify your account via email.</p>
+          </div>
+        </div>
+
+        <div class="group">
+          <div class="subcategory">Managing your notifications</div>
+          <div class="article">
+            <h4>How to manage notifications</h4>
+            <p>You can toggle notifications on and off in your profile page.</p>
+          </div>
+        </div>
+
+        <div class="group">
+          <div class="subcategory">Account FAQs</div>
+          <div class="article"><h4>Can I share a phone number between 2 accounts?</h4></div>
+          <div class="article"><h4>Can I share my account with someone else?</h4></div>
+          <div class="article"><h4>How do I change my phone number?</h4></div>
+          <div class="article"><h4>Why is my phone linked to a new account?</h4></div>
+        </div>
+      </section>
+
+      <!-- Security and safety -->
+      <section class="section">
+        <div class="header">Security and safety</div>
+        <div class="group">
+          <div class="subcategory">Road safety</div>
+          <div class="article">
+            <h4>Extreme weather and road conditions</h4>
+            <p>Drivers must follow posted speed limits and local traffic laws. In extreme weather, drivers should prioritize safety and communicate with passengers about delays or cancellations.</p>
+          </div>
+          <div class="article"><h4>What to do if there is an accident</h4></div>
+          <div class="article"><h4>What insurance do I need for carpooling?</h4></div>
+        </div>
+
+        <div class="group">
+          <div class="subcategory">Security</div>
+          <div class="article"><h4>How we keep you safe</h4></div>
+          <div class="article"><h4>How to avoid scams and phishing</h4></div>
+          <div class="article"><h4>Are member messages private?</h4></div>
+          <div class="article"><h4>Is my data private?</h4></div>
+          <div class="article"><h4>Carrying weapons on a trip</h4></div>
+        </div>
+
+        <div class="group">
+          <div class="subcategory">Community standards</div>
+          <div class="article">
+            <h4>Can I invite friends or family on a Cinna trip?</h4>
+            <p>Yes, as long as they have a booked seat through the platform.</p>
+          </div>
+          <div class="article">
+            <h4>What is the policy on smoking and scents?</h4>
+            <p>Smoking is not permitted. Drivers may set scent preferences; passengers should respect allergy and comfort concerns.</p>
+          </div>
+          <div class="article"><h4>What information can I share in a message?</h4></div>
+          <div class="article"><h4>What to do if a vehicle breaks down</h4></div>
+          <div class="article"><h4>Food, alcohol, and allergies guidelines</h4></div>
+        </div>
+
+        <div class="group">
+          <div class="subcategory">Abuse</div>
+          <div class="article">
+            <h4>Abuse policy</h4>
+            <p>Any form of harassment, discrimination, or unsafe behavior will result in account suspension.</p>
+          </div>
+          <div class="article"><h4>Reporting abuse, bad behaviour, or scams</h4></div>
+          <div class="article">
+            <h4>Reporting unsafe driving</h4>
+            <p>Passengers can report unsafe driving through the app. Multiple reports may result in suspension.</p>
+          </div>
+          <div class="article"><h4>Blocking other members</h4></div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section">
+        <div class="header">FAQ</div>
+        <div class="group">
+          <div class="article"><h4>Is it free to join Cinna?</h4><p>Yes, creating an account and browsing trips is free.</p></div>
+          <div class="article"><h4>Can I use Cinna outside Canada?</h4></div>
+          <div class="article"><h4>What is the difference between Cinna and Uber?</h4></div>
+          <div class="article"><h4>Can I resell bus tickets on Cinna?</h4></div>
+          <div class="article"><h4>Can I call Cinna?</h4></div>
+          <div class="article"><h4>What are your cancellation policies?</h4></div>
+          <div class="article"><h4>How do I report a bug?</h4></div>
+          <div class="article">
+            <h4>Is it legal to carpool on Cinna?</h4>
+            <p>Yes. Drivers are only cost-sharing, not profiting, which complies with Canadian rideshare/carpool regulations.</p>
+          </div>
+          <div class="article"><h4>Do I need to pay GST/HST on Cinna?</h4></div>
+          <div class="article">
+            <h4>Do I have to pay taxes on my earnings as a driver?</h4>
+            <p>Since drivers are only cost-sharing (not earning a profit), trips are generally not considered taxable income. However, if you consistently drive with net profit, consult a tax professional.</p>
+          </div>
+          <div class="article"><h4>How much are the fees to use Cinna?</h4></div>
+          <div class="article"><h4>Do I need a Class 4 license to drive on Cinna?</h4></div>
+          <div class="article">
+            <h4>What are your terms and services?</h4>
+            <p>You can read our terms and services at Profile → Terms and Services.</p>
+          </div>
+          <div class="article"><h4>Can I add stops to a trip after I've posted it?</h4></div>
+          <div class="article"><h4>How do I contact Cinna?</h4></div>
+        </div>
+      </section>
+
+      <div style="height: 24px"></div>
+    </div>
+  </body>
+  </html>
+
+
