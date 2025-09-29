@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Cinna — Terms of Service (v1.0.9)</title>
   <meta name="color-scheme" content="light dark" />
   <style>
@@ -10,7 +10,9 @@
     :root{--bg: #0b0c10; --surface:#12141a; --text:#eef2f7; --muted:#9aa4b2; --link:#7aa2ff; --border:#242836; --accent:#ff4d4f}
     @media (prefers-color-scheme:light){:root{--bg:#ffffff;--surface:#ffffff;--text:#111827;--muted:#6b7280;--link:#0b57d0;--border:#e5e7eb;--accent:#d50000}}
     html,body{height:100%}
-    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji"}
+    html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+    @media (prefers-reduced-motion: reduce){*{scroll-behavior:auto !important;animation:none !important;transition:none !important}}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";-webkit-font-smoothing:antialiased;padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right);padding-bottom:env(safe-area-inset-bottom)}
     .container{max-width:900px;margin:40px auto;padding:0 16px}
     header{border:1px solid var(--border);border-radius:14px;padding:20px;background:var(--surface)}
     h1{margin:0 0 6px;font-size:clamp(28px,3vw,40px);line-height:1.2}
@@ -25,6 +27,25 @@
     .toc{border:1px dashed var(--border);border-radius:10px;padding:14px;margin:10px 0 18px}
     .toc a{text-decoration:none}
     .notice{display:inline-block;background:rgba(255,77,79,.12);color:#ffd7d7;border:1px solid rgba(255,77,79,.3);padding:6px 8px;border-radius:8px;font-size:14px}
+    /* Mobile refinements for iPhone-sized screens */
+    @media (max-width:600px){
+      .container{margin:16px auto;padding:0 14px}
+      header,main article{padding:16px;border-radius:12px}
+      .meta{font-size:13px;gap:10px}
+      .toc{padding:12px}
+      .toc a{padding:10px 8px;display:block;border-radius:8px}
+      .toc-toggle{display:inline-flex;align-items:center;gap:8px;margin-top:8px;padding:10px 12px;border:1px solid var(--border);background:transparent;color:var(--text);border-radius:10px;width:100%;justify-content:space-between}
+      .toc[data-collapsed="true"] #toc-list{display:none}
+    }
+    /* Desktop/large screens: keep TOC always open and hide toggle */
+    @media (min-width:601px){
+      .toc-toggle{display:none}
+      #toc-list{display:block !important}
+    }
+    /* Back-to-top floating action button */
+    #toTop{position:fixed;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));width:44px;height:44px;border-radius:999px;background:var(--accent);color:#ffffff;border:none;box-shadow:0 6px 18px rgba(0,0,0,.35);display:none;align-items:center;justify-content:center;cursor:pointer;z-index:1000}
+    #toTop:focus-visible,.toc-toggle:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+    #toTop:hover{filter:brightness(0.95)}
     @media print{body{background:#fff;color:#000} header,main article{border-color:#ccc} a{text-decoration:none;color:#000}}
   </style>
 </head>
@@ -40,9 +61,10 @@
 
     <main>
       <article>
-        <nav class="toc" aria-label="Table of contents">
+        <nav class="toc" aria-label="Table of contents" data-collapsed="true">
           <strong>Quick outline</strong>
-          <ul>
+          <button class="toc-toggle" type="button" aria-expanded="false" aria-controls="toc-list">Outline <span aria-hidden="true">▾</span></button>
+          <ul id="toc-list">
             <li><a href="#about-cinna">About Cinna</a></li>
             <li><a href="#changes">Changes to the Terms</a></li>
             <li><a href="#eligibility">Eligibility & Accounts</a></li>
@@ -197,5 +219,53 @@
       </article>
     </main>
   </div>
+  <button id="toTop" aria-label="Back to top" title="Back to top">↑</button>
+  <script>
+    (function(){
+      const toc = document.querySelector('.toc');
+      const toggle = document.querySelector('.toc-toggle');
+      const list = document.getElementById('toc-list');
+      if(toggle && toc && list){
+        toggle.addEventListener('click', function(){
+          const collapsed = toc.getAttribute('data-collapsed') === 'true';
+          toc.setAttribute('data-collapsed', collapsed ? 'false' : 'true');
+          this.setAttribute('aria-expanded', collapsed ? 'true' : 'false');
+        });
+      }
+      // Close TOC after tapping a link on small screens
+      if(list){
+        list.addEventListener('click', function(e){
+          const target = e.target;
+          if(target && target.tagName === 'A' && window.matchMedia('(max-width:600px)').matches){
+            toc && toc.setAttribute('data-collapsed','true');
+            toggle && toggle.setAttribute('aria-expanded','false');
+          }
+        });
+      }
+      // Back to top button visibility and behavior
+      const toTop = document.getElementById('toTop');
+      const onScroll = function(){
+        if(window.scrollY > 240){
+          toTop && (toTop.style.display = 'flex');
+        } else {
+          toTop && (toTop.style.display = 'none');
+        }
+      };
+      window.addEventListener('scroll', onScroll, {passive:true});
+      if(toTop){
+        toTop.addEventListener('click', function(){
+          window.scrollTo({top:0, behavior:'smooth'});
+        });
+      }
+      // Respect prefers-reduced-motion for JS scrolling as well
+      if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+        if(toTop){
+          toTop.addEventListener('click', function(){
+            window.scrollTo(0,0);
+          });
+        }
+      }
+    })();
+  </script>
 </body>
 </html>
